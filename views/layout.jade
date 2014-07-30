@@ -4,7 +4,6 @@ html(ng-app='myApp')
     title= title
     link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", rel="stylesheet")
     link(rel='stylesheet' type='text/css' href='/stylesheets/MyFontsWebfontsKit.css')
-    //- link(rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="/stylesheets/mobile-device.css" )
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet' , href='/stylesheets/animations.css')
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
@@ -12,6 +11,7 @@ html(ng-app='myApp')
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js')
     script(src='//code.angularjs.org/1.2.21/angular-route.js')
     script(src='javascripts/main.js')
+    script(src='javascripts/analytics.js')
   body
     div(ng-view)
         block content
