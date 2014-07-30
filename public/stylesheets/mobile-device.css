@@ -1,0 +1,10 @@
+@media only screen and (max-device-width: 480px) {
+/* define mobile specific styles come here */
+    .col-md-3.visualDiv{
+        display:none;
+    }
+
+    .name{
+    	color: red;
+    }
+}

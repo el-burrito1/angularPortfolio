@@ -1,0 +1,682 @@
+@font-face {
+font-family: Fairview;
+src: url("/stylesheets/Fairview_SmallCaps.otf") format("opentype");
+}
+
+
+body {
+  padding: 50px;
+  font: 14px ," Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #171D25;
+  font-family: Fairview;
+  color: white;
+  font-size: 18pt;
+}
+
+p{
+	/*cursor:pointer;*/
+}
+
+h1{
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+.bookList{
+	text-decoration: none;
+	cursor:pointer;
+	color: white;
+}
+
+.bookList:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color:white;
+}
+
+.name{
+	padding-left: 30px;
+}
+
+.mainList{
+	padding-top: 60px;
+	list-style-type: none;
+}
+
+.flyTop{
+	-webkit-transform: translateY(-300px);
+	transform: translateY(-300px);
+	-webkit-animation-name: flyTop;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: flyTop;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+    padding-bottom: 30px;
+}
+
+@-webkit-keyframes flyTop {
+    from {transform: translatey(-300px);}
+    to {transform: translatey(0px);}
+}
+
+@keyframes flyTop {
+    from {transform: translatey(-300px);}
+    to {transform: translatey(0px);}
+}
+
+.flyTop.exit{
+	-webkit-animation-name: flyTopexit;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: flyTopexit;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes flyTopexit {
+    from {transform: translatey(0px);}
+    to {transform: translatey(-300px);}
+}
+
+@keyframes flyTopexit {
+    from {transform: translatey(0px);}
+    to {transform: translatey(-300px);}
+}
+
+
+
+
+.testFont{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size:14pt;
+}
+
+.mainList>li{
+	color: #FFFFFF;
+	/*padding-top: 50px;*/
+	padding-top: 200px;
+
+	font-size: 22pt;
+	-webkit-animation-name: showBusiness;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: showBusiness;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.pointer:hover{
+	color:blue;
+}
+
+@-webkit-keyframes showBusiness {
+    from {padding-top: 200px;}
+    to {padding-top:50px;}
+}
+
+@keyframes showBusiness {
+	from {padding-top: 200px;}
+	to {padding-top:50px;}
+}
+
+
+.techLi{}
+.teamLi{}
+
+.progress{
+	width: 0px;
+	background-color: blue;
+	display: inline-block;
+	height: 3px;
+	margin-bottom: 12px;
+	margin-left: 8px;
+	-webkit-animation-name: progressC;
+	-webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-direction:alternate;
+    /*-webkit-animation-delay: .4s;*/
+    animation-name: progressC;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    /*animation-delay: .4s;*/
+}
+
+.progress2{
+	width: 0px;
+	background-color: blue;
+	display: inline-block;
+	height: 3px;
+	margin-top: 7px;
+	position: absolute;
+	-webkit-animation-name: progressB;
+	-webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-delay: .4s;
+    animation-name: progressB;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: .4s;
+}
+
+.progress3{
+	width: 0px;
+	background-color: blue;
+	display: inline-block;
+	height: 4px;
+	margin-top: 13px;
+	position: absolute;
+	-webkit-animation-name: progressA;
+	-webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-delay: .8s;
+    animation-name: progressA;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: .8s;
+}
+
+@-webkit-keyframes progressA {
+    from {width: 0px;}
+    to {width:24px;}
+}
+
+@keyframes progressA {
+	from {width: 0px;}
+	to {width:24px;}
+}
+
+@-webkit-keyframes progressB {
+    from {width: 0px;}
+    to {width:24px;}
+}
+
+@keyframes progressB {
+	from {width: 0px;}
+	to {width:24px;}
+}
+
+@-webkit-keyframes progressC {
+    from {width: 0px;}
+    to {width:24px;}
+}
+
+@keyframes progressC {
+	from {width: 0px;}
+	to {width:24px;}
+}
+
+
+.layer1{
+	margin-left: 90px;
+	margin-top: 50px;
+	border-radius: 50%;
+	width: 500px;
+	height: 500px;
+	border: 4px solid blue;
+    background-color: #171D25;
+
+	-webkit-animation-name: intro1;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    /*-webkit-animation-fill-mode:forwards;*/
+
+    /*-webkit-animation-delay: .1s;*/
+    animation-name: intro1;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    /*animation-delay: .1s;*/
+}
+
+.layer1.gone{
+	-webkit-animation-name: gone;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: .3s;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: gone;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-delay: .3s;
+    animation-fill-mode:forwards;
+
+}
+
+@-webkit-keyframes gone {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+@keyframes gone {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+.whiteContain{
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	-webkit-animation-name: intro;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: intro;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-delay: .2s;
+    animation-fill-mode:forwards;
+}
+
+.whiteContain.outro{
+	-webkit-animation-name: outro;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: .1s;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: outro;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-delay: .1s;
+    animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes outro {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+@keyframes outro {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+
+
+.whiteLayer{
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	margin-top: 9px;
+	border-radius: 50%;
+	width: 475px;
+	height: 475px;
+	border: 1px dashed white;
+	/*position: absolute;*/
+	top: 12px;
+	margin-left: 8px;
+	-webkit-animation-name: spin;
+	-webkit-animation-duration: 60s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-delay: .4s;
+    animation-name: spin;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: .4s;
+
+}
+
+@-webkit-keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes intro{
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+@keyframes intro {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+
+.layer2{
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	margin-top: 50px;
+	border-radius: 50%;
+	width:450px;
+	height:450px;
+    background-color: #171D25; 
+	border: 4px solid blue;
+	position: absolute;
+	top: 25px;
+	margin-left: 20px;
+	text-align: center;
+
+	-webkit-animation-name: intro;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: intro;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-delay: .2s;
+    animation-fill-mode:forwards;
+
+}
+
+.layer2.outro{
+	-webkit-animation-name: outroTwo;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: .1s;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: outroTwo;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-delay: .1s;
+    animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes outroTwo{
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+@keyframes outroTwo{
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+.topicBall{
+	-webkit-transform: scale(0);
+	border-radius: 50%;
+	width:200px;
+	height:200px;
+	background-color: blue;
+	position: absolute;
+	top: -20px;
+	left: 252px;
+	border: 10px solid #171D25;
+	font-family: Fairview;
+	color: white;
+	cursor:pointer;
+	text-align: center;
+	-webkit-animation-name: mainGrow;
+	-webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: grow;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+.topicBall.mainShrink{
+	-webkit-animation-name: mainShrink;
+	-webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: .1s;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: mainShrink;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes mainShrink {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+@keyframes mainShrink {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+.topicBall:hover{
+	border: 4px solid white;
+}
+
+.topicBall:hover>p{
+	padding-top: 21px;
+	font-size: 22pt;
+}
+
+.topicBall2{
+	-webkit-transform: scale(0);
+	border-radius: 50%;
+	width:140px;
+	height:140px;
+	background-color: blue;
+	position: absolute;
+	top: 360px;
+	border: 10px solid #171D25;
+	font-family: Fairview;
+	color: white;
+	cursor:pointer;
+	text-align: center;
+	-webkit-animation-name: grow;
+	-webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: .3s;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: grow;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+}
+
+.topicBall2:hover{
+	border: 4px solid white;
+}
+
+.topicBall2:hover>p{
+	padding-top: 27px;
+	font-size: 23pt;
+}
+
+
+.topicBall3{
+	-webkit-transform: scale(0);
+	border-radius: 50%;
+	width:140px;
+	height:140px;
+	background-color: blue;
+	position: absolute;
+	top: 360px;
+	left: 470px;
+	border: 10px solid #171D25;
+	font-family: Fairview;
+	color:white;
+	cursor:pointer;
+	text-align: center;
+	-webkit-animation-name: grow;
+	-webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay: .3s;
+    animation-name: grow;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: .3s;
+    animation-fill-mode:forwards;
+}
+
+.topicBall3.shrink{
+	-webkit-animation-name: shrink;
+	-webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay: 0s;
+    animation-name: shrink;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-fill-mode:forwards;
+}
+
+.topicBall2.shrink{
+	-webkit-animation-name: shrink;
+	-webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay: 0s;
+    animation-name: shrink;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes shrink {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+@keyframes shrink {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+
+
+.topicBall3:hover{
+	border: 4px solid white;
+}
+
+.topicBall3:hover>p{
+	padding-top: 27px;
+	font-size: 23pt;
+}
+
+.mainText{
+	font-size: 20pt;
+	padding-top: 14px;
+}
+
+.secondText{
+	font-size: 20pt;
+	padding-top: 20px;
+}
+
+
+.info{
+	margin-top: 120px;
+	color: white;
+	font-size: 18pt;	
+}
+
+
+.tenacious{
+	font-size: 24pt;
+}
+
+.subtext{
+	font-size: 16pt;
+}
+
+.techInfo{
+	color: white;
+	font-size: 18pt;
+	margin-right: 20px;
+}
+
+.html{
+	color: blue;
+}
+
+.liInfo{
+	color: white;
+	font-size: 18pt;
+}
+
+.readMore{
+	color: white;
+	font-size: 18pt;
+	text-decoration: none;
+	padding-left: 7px;
+	cursor:pointer;
+}
+
+.readMore:hover{
+	color: blue;
+	font-size: 18pt;
+	text-decoration: none;
+}
+
+@-webkit-keyframes grow {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+@keyframes grow {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+
+
+@-webkit-keyframes intro1 {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+@keyframes intro1 {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+/*@-webkit-keyframes intro{
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+@keyframes intro {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}*/
+
+@-webkit-keyframes mainGrow {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+@keyframes mainGrow {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+
+

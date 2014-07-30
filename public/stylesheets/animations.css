@@ -1,0 +1,240 @@
+.reFind{
+	padding-top: 75px;
+	padding-left: 15px;
+
+	-webkit-animation-name: content;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: content;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes content {
+    from {transform: translatey(-300px);}
+    to {transform: translatey(0px);}
+}
+
+@keyframes content {
+    from {transform: translatey(-300px);}
+    to {transform: translatey(0px);}
+}
+
+.reFind.salir{
+	-webkit-animation-name: salir;
+	-webkit-animation-duration: .4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: salir;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes salir {
+    from {transform: translatey(0px);}
+    to {transform: translatey(-600px);}
+}
+
+@keyframes salir {
+    from {transform: translatey(0px);}
+    to {transform: translatey(-600px);}
+}
+
+.reFindphoto{
+	padding-top:20px;
+	padding-left: 15px;
+
+	-webkit-animation-name: phone;
+	-webkit-animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: phone;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+.reFindphoto.photosalir{
+	-webkit-animation-name: photosalir;
+	-webkit-animation-duration: .4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    animation-name: photosalir;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes photosalir {
+    from {transform: translatey(0px);}
+    to {transform: translatey(1000px);}
+}
+
+@keyframes photosalir {
+    from {transform: translatey(0px);}
+    to {transform: translatey(1000px);}
+}
+
+@-webkit-keyframes phone {
+    from {transform: translatey(300px);}
+    to {transform: translatey(0px);}
+}
+
+@keyframes phone {
+    from {transform: translatey(300px);}
+    to {transform: translatey(0px);}
+}
+
+.teamRules{
+	padding-top: 10px;
+	padding-left: 8px;
+	padding-bottom: 10px;
+}
+
+.team1{
+	-webkit-animation: teamOne .3s;
+	animation: teamOne .3s;
+}
+
+.team1.home1{
+	-webkit-animation: homeOne .3s .14s;
+	animation: homeOne .3s .14s;
+}
+
+@-webkit-keyframes homeOne {
+    from {transform: translatex(0px);}
+    to {transform: translatex(300px);}
+}
+
+@keyframes homeOne {
+    from {transform: translatex(0px);}
+    to {transform: translatex(300px);}
+}
+
+@-webkit-keyframes teamOne {
+    from {transform: translatex(300px);}
+    to {transform: translatex(0px);}
+}
+
+@keyframes teamOne {
+    from {transform: translatex(300px);}
+    to {transform: translatex(0px);}
+}
+.team2{
+	-webkit-animation: teamTwo .3s .1s;
+	animation: teamTwo .3s .1s;
+}
+
+.team2.home2{
+	-webkit-animation: homeTwo .3s .07s;
+	animation: homeTwo .3s .07s;
+}
+
+@-webkit-keyframes homeTwo {
+    from {transform: translatex(0px);}
+    to {transform: translatex(320px);}
+}
+
+@keyframes homeTwo {
+    from {transform: translatex(0px);}
+    to {transform: translatex(320px);}
+}
+
+@-webkit-keyframes teamTwo {
+    from {transform: translatex(320px);}
+    to {transform: translatex(0px);}
+}
+
+@keyframes teamTwo {
+    from {transform: translatex(320px);}
+    to {transform: translatex(0px);}
+}
+
+.team3{
+	-webkit-animation: teamThree .3s .2s;
+	animation: teamThree .3s .2s;
+}
+
+.team3.home3{
+	-webkit-animation: homeThree .3s;
+	animation: homeThree .3s;
+}
+
+@-webkit-keyframes homeThree {
+    from {transform: translatex(0px);}
+    to {transform: translatex(340px);}
+}
+
+@keyframes homeThree {
+    from {transform: translatex(0px);}
+    to {transform: translatex(340px);}
+}
+
+@-webkit-keyframes teamThree {
+    from {transform: translatex(340px);}
+    to {transform: translatex(0px);}
+}
+
+@keyframes teamThree {
+    from {transform: translatex(340px);}
+    to {transform: translatex(0px);}
+}
+
+.mobileSite{
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+
+    .topicBall{
+        top: -70px;
+    }
+
+       .layer2{
+        margin-top:0px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .col-md-3.visualDiv{
+        display: none;
+    }
+
+    .mobileSite{
+        display: block;
+        padding-top: 25px;
+        padding-left: 25px;
+    }
+
+    .mainList{
+        padding-left: 60px;
+        margin-top: -95px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .col-md-3.visualDiv{
+        display: none;
+    }
+
+    .mobileSite{
+        display: block;
+        padding-top: 25px;
+        padding-left: 40px;
+    }
+
+    .mainList{
+        padding-left: 60px;
+        margin-top: -95px;
+    }
+
+}
+
