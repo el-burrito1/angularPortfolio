@@ -13,8 +13,8 @@
 }
 
 @-webkit-keyframes content {
-    from {transform: translatey(-300px);}
-    to {transform: translatey(0px);}
+    from {-webkit-transform: translatey(-300px);}
+    to {-webkit-transform: translatey(0px);}
 }
 
 @keyframes content {
@@ -34,8 +34,8 @@
 }
 
 @-webkit-keyframes salir {
-    from {transform: translatey(0px);}
-    to {transform: translatey(-600px);}
+    from {-webkit-transform: translatey(0px);}
+    to {-webkit-transform: translatey(-600px);}
 }
 
 @keyframes salir {
@@ -69,8 +69,8 @@
 }
 
 @-webkit-keyframes photosalir {
-    from {transform: translatey(0px);}
-    to {transform: translatey(1000px);}
+    from {-webkit-transform: translatey(0px);}
+    to {-webkit-transform: translatey(1000px);}
 }
 
 @keyframes photosalir {
@@ -79,8 +79,8 @@
 }
 
 @-webkit-keyframes phone {
-    from {transform: translatey(300px);}
-    to {transform: translatey(0px);}
+    from {-webkit-transform: translatey(300px);}
+    to {-webkit-transform: translatey(0px);}
 }
 
 @keyframes phone {
@@ -105,8 +105,8 @@
 }
 
 @-webkit-keyframes homeOne {
-    from {transform: translatex(0px);}
-    to {transform: translatex(300px);}
+    from {-webkit-transform: translatex(0px);}
+    to {-webkit-transform: translatex(300px);}
 }
 
 @keyframes homeOne {
@@ -115,8 +115,8 @@
 }
 
 @-webkit-keyframes teamOne {
-    from {transform: translatex(300px);}
-    to {transform: translatex(0px);}
+    from {-webkit-transform: translatex(300px);}
+    to {-webkit-transform: translatex(0px);}
 }
 
 @keyframes teamOne {
@@ -134,8 +134,8 @@
 }
 
 @-webkit-keyframes homeTwo {
-    from {transform: translatex(0px);}
-    to {transform: translatex(320px);}
+    from {-webkit-transform: translatex(0px);}
+    to {-webkit-transform: translatex(320px);}
 }
 
 @keyframes homeTwo {
@@ -144,8 +144,8 @@
 }
 
 @-webkit-keyframes teamTwo {
-    from {transform: translatex(320px);}
-    to {transform: translatex(0px);}
+    from {-webkit-transform: translatex(320px);}
+    to {-webkit-transform: translatex(0px);}
 }
 
 @keyframes teamTwo {
@@ -164,8 +164,8 @@
 }
 
 @-webkit-keyframes homeThree {
-    from {transform: translatex(0px);}
-    to {transform: translatex(340px);}
+    from {-webkit-transform: translatex(0px);}
+    to {-webkit-transform: translatex(340px);}
 }
 
 @keyframes homeThree {
@@ -174,8 +174,8 @@
 }
 
 @-webkit-keyframes teamThree {
-    from {transform: translatex(340px);}
-    to {transform: translatex(0px);}
+    from {-webkit-transform: translatex(340px);}
+    to {-webkit-transform: translatex(0px);}
 }
 
 @keyframes teamThree {

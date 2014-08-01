@@ -64,28 +64,28 @@ div(class='col-md-6' ng-hide='!showTeam')
     h3(ng-click='home()' class='pointer') back
 div(class='col-md-3 visualDiv')
     div(class='layer1') 
-        div(class='whiteContainer')
+        div(class='whiteContain')
             div(class='whiteLayer')
-        div(class='layer2')
-            div(ng-hide='tech || team')
-                p(class='info' style='white-space:pre;')  I am searching for a company that needs
-                    | <span class='tenacious'>tenacious, agile, and devoted team players </span>
+            div(class='layer2')
+                div(ng-hide='tech || team')
+                    p(class='info' style='white-space:pre;')  I am searching for a company that needs
+                        | <span class='tenacious'>tenacious, agile, and devoted team players </span>
+                        br
+                        br
+                        a(class='readMore' ng-click='businessClick()') read more 
+                div(ng-click='tech=true' ng-show='tech' ng-hide='business || team') 
+                    p(class='info' style='white-space:pre;')  ANGULAR
+                    p(class='liInfo' style='white-space:pre;')  NODE
+                    p(class='liInfo' style='white-space:pre;')  HTML &amp; CSS
+                    p(class='liInfo' style='white-space:pre;')  UX DESIGN
                     br
-                    br
-                    a(class='readMore' ng-click='businessClick()') read more 
-            div(ng-click='tech=true' ng-show='tech' ng-hide='business || team') 
-                p(class='info' style='white-space:pre;')  ANGULAR
-                p(class='liInfo' style='white-space:pre;')  NODE
-                p(class='liInfo' style='white-space:pre;')  HTML &amp; CSS
-                p(class='liInfo' style='white-space:pre;')  UX DESIGN
-                br
-                a(class='readMore' style='white-space:pre;' ng-click=('techClick()'))  view portfolio
-            div(ng-click='team=true' ng-show='team' ng-hide='business || tech')
-                p(class='info' style='white-space:pre;')  I played Division 1 Football in College
-                    | <span class='tenacious'>teamwork means a lot to me</span>
-                    br
-                    br
-                    a(class='readMore' ng-click='teamClick()') learn more 
+                    a(class='readMore' style='white-space:pre;' ng-click=('techClick()'))  view portfolio
+                div(ng-click='team=true' ng-show='team' ng-hide='business || tech')
+                    p(class='info' style='white-space:pre;')  I played Division 1 Football in College
+                        | <span class='tenacious'>teamwork means a lot to me</span>
+                        br
+                        br
+                        a(class='readMore' ng-click='teamClick()') learn more 
         div(class='topicBall' ng-click='business=true;tech=false;team=false' ) 
             p(class='mainText' style='white-space:pre;') BUSINESS
                 | It's all about the User

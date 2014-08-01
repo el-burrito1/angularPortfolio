@@ -59,8 +59,8 @@ h1{
 }
 
 @-webkit-keyframes flyTop {
-    from {transform: translatey(-300px);}
-    to {transform: translatey(0px);}
+    from {-webkit-transform: translatey(-300px);}
+    to {-webkit-transform: translatey(0px);}
 }
 
 @keyframes flyTop {
@@ -80,8 +80,8 @@ h1{
 }
 
 @-webkit-keyframes flyTopexit {
-    from {transform: translatey(0px);}
-    to {transform: translatey(-300px);}
+    from {-webkit-transform: translatey(0px);}
+    to {-webkit-transform: translatey(-300px);}
 }
 
 @keyframes flyTopexit {
@@ -268,8 +268,8 @@ h1{
 }
 
 @-webkit-keyframes gone {
-    from {transform: scale(1);}
-    to {transform: scale(0);}
+    from {-webkit-transform: scale(1);}
+    to {-webkit-transform: scale(0);}
 }
 
 @keyframes gone {
@@ -283,12 +283,12 @@ h1{
 	-webkit-animation-name: intro;
 	-webkit-animation-duration: .2s;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: .2s;
+    /*-webkit-animation-delay: .2s;*/
     -webkit-animation-fill-mode:forwards;
     animation-name: intro;
     animation-duration: .2s;
     animation-timing-function: linear;
-    animation-delay: .2s;
+    /*animation-delay: .2s;*/
     animation-fill-mode:forwards;
 }
 
@@ -306,8 +306,8 @@ h1{
 }
 
 @-webkit-keyframes outro {
-    from {transform: scale(1);}
-    to {transform: scale(0);}
+    from {-webkit-transform: scale(1);}
+    to {-webkit-transform: scale(0);}
 }
 
 @keyframes outro {
@@ -327,7 +327,7 @@ h1{
 	border: 1px dashed white;
 	/*position: absolute;*/
 	top: 12px;
-	margin-left: 8px;
+	margin-left: 10px;
 	-webkit-animation-name: spin;
 	-webkit-animation-duration: 60s;
     -webkit-animation-timing-function: linear;
@@ -344,8 +344,8 @@ h1{
 }
 
 @-webkit-keyframes spin {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
 }
 
 @keyframes spin {
@@ -354,8 +354,8 @@ h1{
 }
 
 @-webkit-keyframes intro{
-    from {transform: scale(0);}
-    to {transform: scale(1);}
+    from {-webkit-transform: scale(0);}
+    to {-webkit-transform: scale(1);}
 }
 
 @keyframes intro {
@@ -367,7 +367,7 @@ h1{
 .layer2{
 	-webkit-transform: scale(0);
 	transform: scale(0);
-	margin-top: 50px;
+	margin-top: -12px;
 	border-radius: 50%;
 	width:450px;
 	height:450px;
@@ -375,7 +375,7 @@ h1{
 	border: 4px solid blue;
 	position: absolute;
 	top: 25px;
-	margin-left: 20px;
+	margin-left: 22px;
 	text-align: center;
 
 	-webkit-animation-name: intro;
@@ -405,8 +405,8 @@ h1{
 }
 
 @-webkit-keyframes outroTwo{
-    from {transform: scale(1);}
-    to {transform: scale(0);}
+    from {-webkit-transform: scale(1);}
+    to {-webkit-transform: scale(0);}
 }
 
 @keyframes outroTwo{
@@ -455,8 +455,8 @@ h1{
 
 
 @-webkit-keyframes mainShrink {
-    from {transform: scale(1);}
-    to {transform: scale(0);}
+    from {-webkit-transform: scale(1);}
+    to {-webkit-transform: scale(0);}
 }
 
 @keyframes mainShrink {
@@ -475,11 +475,13 @@ h1{
 
 .topicBall2{
 	-webkit-transform: scale(0);
+	transform: scale(0);
 	border-radius: 50%;
 	width:140px;
 	height:140px;
 	background-color: blue;
-	position: absolute;
+	/*position: absolute;*/
+	margin-top: -175px;
 	top: 360px;
 	border: 10px solid #171D25;
 	font-family: Fairview;
@@ -502,7 +504,7 @@ h1{
 	border: 4px solid white;
 }
 
-.topicBall2:hover>p{
+.topicBall2 p : hover{
 	padding-top: 27px;
 	font-size: 23pt;
 }
@@ -510,6 +512,7 @@ h1{
 
 .topicBall3{
 	-webkit-transform: scale(0);
+	transform: scale(0);
 	border-radius: 50%;
 	width:140px;
 	height:140px;
@@ -561,8 +564,8 @@ h1{
 }
 
 @-webkit-keyframes shrink {
-    from {transform: scale(1);}
-    to {transform: scale(0);}
+    from {-webkit-transform: scale(1);}
+    to {-webkit-transform: scale(0);}
 }
 
 @keyframes shrink {
@@ -637,8 +640,8 @@ h1{
 }
 
 @-webkit-keyframes grow {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
+    from {-webkit-transform: scale(0);}
+    to {-webkit-transform: scale(1);}
 }
 
 @keyframes grow {
@@ -649,8 +652,8 @@ h1{
 
 
 @-webkit-keyframes intro1 {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
+    from {-webkit-transform: scale(0);}
+    to {-webkit-transform: scale(1);}
 }
 
 @keyframes intro1 {
@@ -669,8 +672,8 @@ h1{
 }*/
 
 @-webkit-keyframes mainGrow {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
+    from {-webkit-transform: scale(0);}
+    to {-webkit-transform: scale(1);}
 }
 
 @keyframes mainGrow {
