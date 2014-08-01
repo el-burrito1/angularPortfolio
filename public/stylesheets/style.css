@@ -681,5 +681,30 @@ h1{
     to {transform: scale(1);}
 }
 
+@media all and (max-width: 998px){
+
+	.topicBall{
+        top: -70px;
+    }
+
+    .layer2{
+        margin-top:-12px;
+    }
+
+    .topicBall3{
+    	margin-top: -50px;
+    }
+}
+
+@media all and (min-width: 993px) and (max-height: 997px){
+	.topicBall{
+		top: 0px;
+	}
+
+	.topicBall3{
+		margin-top: 0px;
+	}
+}
+
 
 
