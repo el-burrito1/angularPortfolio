@@ -1,13 +1,4 @@
 doctype html
-<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
-<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
-<!--[if !IE]><!-->
-html(lang="en")
-    head Spencer Spiegel
-    body
-        div 
-            h1 hello
-  <!--<![endif]-->
 html(ng-app='myApp')
   head
     title Spencer Spiegel
@@ -15,6 +6,9 @@ html(ng-app='myApp')
     link(rel='stylesheet' type='text/css' href='/stylesheets/MyFontsWebfontsKit.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet' , href='/stylesheets/animations.css')
+    <!--[if lt IE]>
+    link(rel='stylesheet', href='ie.css')
+    <![endif]-->
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
     script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js')
