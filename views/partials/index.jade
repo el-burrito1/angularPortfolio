@@ -1,106 +1,110 @@
-div(class='col-md-2')
-    h1(class='name') SPENCER SPIEGEL
-    ul(class='mainList')
-        li(ng-click='business=true;tech=false;team=false;switchBusiness()' class='businessLi') <span class='pointer'>Business</span>
-            span(class='progress' ng-hide='tech || team')
-                span(class='progress2' ng-hide='tech || team')
-                span(class='progress3' ng-hide='tech || team')
-        li(ng-click='tech=true;business=false;team=false;switchTech()') <span class='pointer techLi'>Technology</span>
-            span(class='progress' ng-show='tech')
-                span(class='progress2' ng-show='tech')
-                span(class='progress3' ng-show='tech')
-        li(ng-click='team=true;business=false;tech=false;switchTeam()') <span class='pointer teamLi'>Teamwork</span>
-            span(class='progress' ng-show='team')
-                span(class='progress2' ng-show='team')
-                span(class='progress3' ng-show='team')
-div(class='col-md-6' ng-hide='!showBusiness')
-    div(class='flyTop')
-        h1 Learn by Doing
-        p(class='testFont') I am an aspiring product manager. I'm passionate about customer acquisition and user experience, and 
-            | probably enjoy google analytics a little too much. Listening and communication are my natural strengths. 
-            | Front-end development is an area where I'm improving.
-            br
-            br
-            | I like to read about entrepreneurship and business strategy in my free time, and love discussing the topics 
-            | with anyone who shares an interest. Here are some related books that I've enjoyed reading:
-    ul
-        li <a class='bookList a' href='http://www.amazon.com/The-Lean-Startup-Entrepreneurs-Continuous/dp/0307887898' target='_blank'>The Lean Startup by Eric Reis</a>
-        li <a class='bookList b' href='http://www.amazon.com/Little-Bets-Breakthrough-Emerge-Discoveries/dp/1439170436' target='_blank'>Little Bets by Peter Sims</a>
-        li <a class='bookList c' href='http://www.amazon.com/The-Founders-Dilemmas-Anticipating-Entrepreneurship/dp/0691158304' target='_blank'>The Founder's Dillemas by Noam Wasserman</a>
-        li <a class='bookList d' href='http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537/' target='_blank'>Steve Jobs by Walter Isaacson</a>
-        li <a class='bookList e' href='http://www.amazon.com/Pour-Your-Heart-Into-Starbucks/dp/0786883561' target='_blank'>Pour Your Heart Into It by Howard Schultz</a>
-        li <a class='bookList f' href='http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555' target='_blank'>Thinking, Fast and Slow by Daniel Kahneman</a>
-        li <a class='bookList g' href='http://www.amazon.com/The-Everything-Store-Bezos-Amazon-ebook/dp/B00BWQW73E' target='_blank'>The Everything Store by Brad Stone</a>
-        li <a class='bookList h' href='http://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/160941280X' target='_blank'>Delivering Happiness by Tony Hsieh</a>
-    h3(ng-click='home()' class='pointer') back
-div(class='row' ng-hide='!showTech')
-    div(class='reFind col-md-3') 
-        h1 reFind
-        p( class='testFont') reFind is a mobile application that allows 
-            | users to view the general location of other 
-            | users based upon relationship status. 
-            | The app was built using Node, Mongo, 
-            | and Phonegap. Currently in public beta.
-        h3(ng-click='home()' class='pointer backButton') back 
-    div(class='reFindphoto col-md-2') 
-        img(src='/images/portfolioScreenshot.png')
-div(class='col-md-6' ng-hide='!showTeam')
-    div()
-        h1 "Prepare to be great, today"
-        p(class='testFont') From 2008-2011 I played on the USC football team as a walk-on player. I was part of a Rose Bowl championship 
-            | team and had the privilege of playing under Pete Carroll. I can't understate the impact that Pete Carroll's coaching philosophy 
-            | had on the way I approach teamwork, practice, challenges, and success.
-            br
-            br
-            | These are three ideas related to teamwork that are important to me:
-        div(class='teamRules')
-            ol 
-                li(class='team1') You have to practice with unmatched focus and pace. The days are too short to not maximize every moment.
+div(class='IEdiv')
+    h1 Welcome to the portfolio site of Spencer Spiegel 
+        p We noticed that you are using Internet Explorer. This site was developed to highlight front-end work, and is best viewed using either Chrome, Firefox, or Safari. Thank you for understanding.
+div(class='masterDiv')
+    div(class='col-md-2')
+        h1(class='name') SPENCER SPIEGEL
+        ul(class='mainList')
+            li(ng-click='business=true;tech=false;team=false;switchBusiness()' class='businessLi') <span class='pointer'>Business</span>
+                span(class='progress' ng-hide='tech || team')
+                    span(class='progress2' ng-hide='tech || team')
+                    span(class='progress3' ng-hide='tech || team')
+            li(ng-click='tech=true;business=false;team=false;switchTech()') <span class='pointer techLi'>Technology</span>
+                span(class='progress' ng-show='tech')
+                    span(class='progress2' ng-show='tech')
+                    span(class='progress3' ng-show='tech')
+            li(ng-click='team=true;business=false;tech=false;switchTeam()') <span class='pointer teamLi'>Teamwork</span>
+                span(class='progress' ng-show='team')
+                    span(class='progress2' ng-show='team')
+                    span(class='progress3' ng-show='team')
+    div(class='col-md-6' ng-hide='!showBusiness')
+        div(class='flyTop')
+            h1 Learn by Doing
+            p(class='testFont') I am an aspiring product manager. I'm passionate about customer acquisition and user experience, and 
+                | probably enjoy google analytics a little too much. Listening and communication are my natural strengths. 
+                | Front-end development is an area where I'm improving.
                 br
-                li(class='team2') Focus on what you can control. Don't let fear of competitors or challenges paralyze you from making progress. Focus on the moment and maximize every drop of opportunity that you have in front of you today. 
                 br
-                li(class='team3') No whining, no complaining, no excuses. If you don't fundamentally believe in the championship caliber of the team, you don't belong on the team.
-        p(class='testFont') Teamwork is something that shouldn't be taken for granted. Being part of a group where every member believes in the collective potential and contributes their personal best to making it a reality; that's one of the best feelings in the world.
-    h3(ng-click='home()' class='pointer') back
-div(class='col-md-3 visualDiv')
-    div(class='layer1') 
-        div(class='whiteContain')
-            div(class='whiteLayer')
-            div(class='layer2')
-                div(ng-hide='tech || team')
-                    p(class='info' style='white-space:pre;')  I am searching for a company that needs
-                        | <span class='tenacious'>tenacious, agile, and devoted team players </span>
-                        br
-                        br
-                        a(class='readMore' ng-click='businessClick()') read more 
-                div(ng-click='tech=true' ng-show='tech' ng-hide='business || team') 
-                    p(class='info' style='white-space:pre;')  ANGULAR
-                    p(class='liInfo' style='white-space:pre;')  NODE
-                    p(class='liInfo' style='white-space:pre;')  HTML &amp; CSS
-                    p(class='liInfo' style='white-space:pre;')  UX DESIGN
+                | I like to read about entrepreneurship and business strategy in my free time, and love discussing the topics 
+                | with anyone who shares an interest. Here are some related books that I've enjoyed reading:
+        ul
+            li <a class='bookList a' href='http://www.amazon.com/The-Lean-Startup-Entrepreneurs-Continuous/dp/0307887898' target='_blank'>The Lean Startup by Eric Reis</a>
+            li <a class='bookList b' href='http://www.amazon.com/Little-Bets-Breakthrough-Emerge-Discoveries/dp/1439170436' target='_blank'>Little Bets by Peter Sims</a>
+            li <a class='bookList c' href='http://www.amazon.com/The-Founders-Dilemmas-Anticipating-Entrepreneurship/dp/0691158304' target='_blank'>The Founder's Dillemas by Noam Wasserman</a>
+            li <a class='bookList d' href='http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537/' target='_blank'>Steve Jobs by Walter Isaacson</a>
+            li <a class='bookList e' href='http://www.amazon.com/Pour-Your-Heart-Into-Starbucks/dp/0786883561' target='_blank'>Pour Your Heart Into It by Howard Schultz</a>
+            li <a class='bookList f' href='http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555' target='_blank'>Thinking, Fast and Slow by Daniel Kahneman</a>
+            li <a class='bookList g' href='http://www.amazon.com/The-Everything-Store-Bezos-Amazon-ebook/dp/B00BWQW73E' target='_blank'>The Everything Store by Brad Stone</a>
+            li <a class='bookList h' href='http://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/160941280X' target='_blank'>Delivering Happiness by Tony Hsieh</a>
+        h3(ng-click='home()' class='pointer') back
+    div(class='row' ng-hide='!showTech')
+        div(class='reFind col-md-3') 
+            h1 reFind
+            p( class='testFont') reFind is a mobile application that allows 
+                | users to view the general location of other 
+                | users based upon relationship status. 
+                | The app was built using Node, Mongo, 
+                | and Phonegap. Currently in public beta.
+            h3(ng-click='home()' class='pointer backButton') back 
+        div(class='reFindphoto col-md-2') 
+            img(src='/images/portfolioScreenshot.png')
+    div(class='col-md-6' ng-hide='!showTeam')
+        div()
+            h1 "Prepare to be great, today"
+            p(class='testFont') From 2008-2011 I played on the USC football team as a walk-on player. I was part of a Rose Bowl championship 
+                | team and had the privilege of playing under Pete Carroll. I can't understate the impact that Pete Carroll's coaching philosophy 
+                | had on the way I approach teamwork, practice, challenges, and success.
+                br
+                br
+                | These are three ideas related to teamwork that are important to me:
+            div(class='teamRules')
+                ol 
+                    li(class='team1') You have to practice with unmatched focus and pace. The days are too short to not maximize every moment.
                     br
-                    a(class='readMore' style='white-space:pre;' ng-click=('techClick()'))  view portfolio
-                div(ng-click='team=true' ng-show='team' ng-hide='business || tech')
-                    p(class='info' style='white-space:pre;')  I played Division 1 Football in College
-                        | <span class='tenacious'>teamwork means a lot to me</span>
+                    li(class='team2') Focus on what you can control. Don't let fear of competitors or challenges paralyze you from making progress. Focus on the moment and maximize every drop of opportunity that you have in front of you today. 
+                    br
+                    li(class='team3') No whining, no complaining, no excuses. If you don't fundamentally believe in the championship caliber of the team, you don't belong on the team.
+            p(class='testFont') Teamwork is something that shouldn't be taken for granted. Being part of a group where every member believes in the collective potential and contributes their personal best to making it a reality; that's one of the best feelings in the world.
+        h3(ng-click='home()' class='pointer') back
+    div(class='col-md-3 visualDiv')
+        div(class='layer1') 
+            div(class='whiteContain')
+                div(class='whiteLayer')
+                div(class='layer2')
+                    div(ng-hide='tech || team')
+                        p(class='info' style='white-space:pre;')  I am searching for a company that needs
+                            | <span class='tenacious'>tenacious, agile, and devoted team players </span>
+                            br
+                            br
+                            a(class='readMore' ng-click='businessClick()') read more 
+                    div(ng-click='tech=true' ng-show='tech' ng-hide='business || team') 
+                        p(class='info' style='white-space:pre;')  ANGULAR
+                        p(class='liInfo' style='white-space:pre;')  NODE
+                        p(class='liInfo' style='white-space:pre;')  HTML &amp; CSS
+                        p(class='liInfo' style='white-space:pre;')  UX DESIGN
                         br
-                        br
-                        a(class='readMore' ng-click='teamClick()') learn more 
-        div(class='topicBall' ng-click='business=true;tech=false;team=false' ) 
-            p(class='mainText' style='white-space:pre;') BUSINESS
-                | It's all about the User
-        div(class='topicBall2' ng-click='tech=true;team=false;business=false') 
-            p(class='secondText' style='white-space:pre;') Tech
-        div(class='topicBall3' ng-click='team=true;tech=false;business=false') 
-            p(class='secondText' style='white-space:pre;') Team
-script.
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                        a(class='readMore' style='white-space:pre;' ng-click=('techClick()'))  view portfolio
+                    div(ng-click='team=true' ng-show='team' ng-hide='business || tech')
+                        p(class='info' style='white-space:pre;')  I played Division 1 Football in College
+                            | <span class='tenacious'>teamwork means a lot to me</span>
+                            br
+                            br
+                            a(class='readMore' ng-click='teamClick()') learn more 
+            div(class='topicBall' ng-click='business=true;tech=false;team=false' ) 
+                p(class='mainText' style='white-space:pre;') BUSINESS
+                    | It's all about the User
+            div(class='topicBall2' ng-click='tech=true;team=false;business=false') 
+                p(class='secondText' style='white-space:pre;') Tech
+            div(class='topicBall3' ng-click='team=true;tech=false;business=false') 
+                p(class='secondText' style='white-space:pre;') Team
+    script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-49162526-2', 'auto');
-    ga('send', 'pageview');
+        ga('create', 'UA-49162526-2', 'auto');
+        ga('send', 'pageview');
 
 
 

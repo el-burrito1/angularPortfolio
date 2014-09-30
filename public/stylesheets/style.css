@@ -1,3 +1,7 @@
+.IEdiv{
+    display: none;
+}
+
 @font-face {
 font-family: Fairview;
 src: url("/stylesheets/Fairview_SmallCaps.otf") format("opentype");
